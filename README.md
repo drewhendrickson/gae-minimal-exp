@@ -29,6 +29,8 @@ A minimal experiment to show off how to use Google App Engine for psychology exp
 
 ### Files in this project and what they do:
 
+- index.html: actual html of the experiment that is loaded
+- js/exp.js: javascript file loaded by index.html (except for JQuery)
 - app.yaml: (often need to change the first two lines)
   - defines app name and version number (along with what version of python to use)
 - backend.py: tells the server how to process requests (should be left alone)
@@ -36,9 +38,8 @@ A minimal experiment to show off how to use Google App Engine for psychology exp
 - bulkloader.yaml: (should be left alone)
   - tells the data downloader how the data from Google will be formatted
   - must match backend.py
-- index.html: actual html of the experiment that is loaded
-- js/exp.js: javascript file loaded by index.html (except for JQuery)
 - analysis/parser.py: parses raw GAE result (it assumes a tab-delimited file) into CSV file suitable for further processing
+- analysis/read.R: basic R file that calles parser.py and reads the data into an R data.frame
 
 ### How to upload a new version of your experiment
 
