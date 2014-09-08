@@ -10,19 +10,12 @@ $(document).ready(function () {
 
   // load all scrips then begin the experiment
   $.when(
-//        $.getScript( "http://code.jquery.com/ui/jquery-ui-git.js" ), // needed for the slider
-    $.getScript( "js/offline_testing_tools/jquery-ui-git.js" ), // needed for the slider
-
-
-    $.getScript( "/js/support_fcns.js" ),
-    $.getScript( "/js/exp_logic.js" ),
-    $.getScript( "/js/instructions.js" ),
-    $.getScript( "/js/demographics.js" ),
+    $.getScript( "http://code.jquery.com/jquery-latest.min.js" ),
 
     $.Deferred(function( deferred ){
       $( deferred.resolve );
     })
   ).done(function(){
-    start();
+    startExperiment();
   });
 });
