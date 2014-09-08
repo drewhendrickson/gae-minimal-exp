@@ -10,6 +10,27 @@
 
   </head>
   <body>
+    
+    <div id="experiment">
+      <form>
+        <label for="question1">Question 1:</label><br>
+        <input type="radio" name="question1" value="correct"> Correct <br>
+        <input type="radio" name="question1" value="incorrect"> Incorrect<br><br>
 
+        <label for="question2">Question 2:</label><br>
+        <input type="radio" name="question2" value="correct"> Correct <br>
+        <input type="radio" name="question2" value="incorrect"> Incorrect<br><br>
+
+        <label for="question3">Question 3:</label><br>
+        <input type="radio" name="question3" value="correct"> Correct <br>
+        <input type="radio" name="question3" value="incorrect"> Incorrect<br>
+      </form>
+
+      <input type="button" value="Done" id="done" onclick="finishExperiment">
+
+    </div>
+
+    <script src="js/exp.js" type="text/javascript"></script>
+    
   </body>
 </html>
